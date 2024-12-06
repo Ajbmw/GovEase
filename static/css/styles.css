@@ -1,0 +1,322 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between; /* Align items to both ends */
+    align-items: center; /* Vertically center items */
+    background-color: #0078ff;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: inherit; /* Makes the link take the color of the <h1> */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ffc300;
+}
+
+.menu button {
+    padding: 5px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #005bb5;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu button:hover {
+    background-color: #00408a;
+}
+
+.menu button:active {
+    transform: scale(0.95);
+}
+
+/* Chat Interface */
+.chat-interface {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+}
+
+/* Chatbox */
+.chatbox {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #012a4a;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.chatbox::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbox::-webkit-scrollbar-thumb {
+    background-color: #b0b0b0;
+    border-radius: 10px;
+}
+
+.chatbox .message {
+    display: flex;
+    align-items: flex-start;
+}
+
+.chatbox .message.user {
+    justify-content: flex-end;
+}
+
+.chatbox .message.bot p,
+.chatbox .message.user p {
+    max-width: 75%;
+    padding: 12px 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 12px;
+}
+
+.chatbox .message.user p {
+    background: #0078ff;
+    color: white;
+    border-bottom-right-radius: 2px;
+}
+
+.chatbox .message.bot p {
+    background: #e0e0e0;
+    color: #333;
+    border-bottom-left-radius: 2px;
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f2f5;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input textarea {
+    flex: 1;
+    resize: none;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input textarea:focus {
+    outline: none;
+}
+
+.chat-input button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50%;
+    background-color: #0078ff;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.chat-input button:hover {
+    background-color: #005bb5;
+}
+
+.chat-input button:active {
+    transform: scale(0.95);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f0f2f5;
+    color: #666;
+    font-size: 12px;
+    border-top: 1px solid #ddd;
+}
+
+/* Log In */
+main {
+    height: 100vh; /* Full height for centering */
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden;
+}
+
+.login-section {
+    display: flex;               /* Use flexbox for centering */
+    justify-content: center;     /* Center horizontally */
+    align-items: center;         /* Center vertically */
+    height: 100vh;               /* Full viewport height for vertical centering */
+}
+
+.login-container {
+    text-align: center;
+    padding: 4rem;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+h2 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: #009688;
+}
+
+p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+input {
+    width: 400px;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+.btn-login {
+    padding: 0.75rem;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #43A047;
+}
+
+.signup-link {
+    margin-top: 1rem;
+}
+
+.signup-link a {
+    text-decoration: none;
+    color: #009688;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.signup-section{
+    text-align: center;
+    padding: 4rem;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Styling for the flash messages */
+.flash-messages {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flash {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.flash.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.flash.danger {
+    background-color: #f44336;
+    color: white;
+}
