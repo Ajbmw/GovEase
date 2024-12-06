@@ -1,0 +1,39 @@
+id,query,response,persons,time
+1,How to get a Barangay Certification?,"Step 1: Go to Barangay Office, ask the Brgy. Secretary for the request slip then fill it out.",Barangay Secretary,2 Minutes
+,How to get a Barangay Certification?,Step 2: Submit the request slip to the Punong Barangay for Approval including the Approved Purok Certification ,Punong Barangay,2 Minutes
+,How to get a Barangay Certification?,Step 3: Present the request slip to the Barangay Secretary for Issuance,Barangay Secretary,3 Minutes
+,How to get a Barangay Certification?,Step 4: Pay the Certification fee: PHP 130.00,Barangay Treasurer,3 Minutes
+,How to get a Barangay Certification?,Step 5: Issuance of Barangay Certification,Barangay Secretary,2 Minutes
+,How to get a Barangay Certification?,Step 6: Go to the Punong Barangay for the Signature and Approval of the Issued Barangay Certification,Punong Barangay,5 Minutes
+,,,,
+2,How to get a Barangay Clearance?,"Step 1: Go to the Barangay Office, ask for the request form from the Barangay Secretary, and fill it up.",Barangay Secretary,2 Minutes
+,How to get a Barangay Clearance?,Step 2: Submit the request slip to the Punong Barangay for Approval including the Approved Purok Certification ,Punong Barangay,2 Minutes
+,How to get a Barangay Clearance?,Step 3: Present the request slip to the Barangay Secretary for Issuance,Barangay Secretary,3 Minutes
+,How to get a Barangay Clearance?,Step 4: Pay the Clearance fee: PHP 130.00,Barangay Treasurer,3 Minutes
+,How to get a Barangay Clearance?,Step 5: Issuance of Barangay Clearance,Barangay Secretary,2 Minutes
+,How to get a Barangay Clearance?,Step 6: Go to the Punong Barangay fo the Signature and Approval of the Issued Barangay Clearance,Punong Barangay,5 Minutes
+,,,,
+3,How to get a Community Tax Certificate?,"Step 1: Go to the Barangay Office, ask the Desk Officer for the request slip",Barangay Treasurer,3 Minutes
+,How to get a Community Tax Certificate?,Step 2: Completely fill out the form and pass it to the Barangay Treasurer,Barangay Treasurer,2 Minutes
+,How to get a Community Tax Certificate?,Step 3: Pay the cost of Community Tax Certificate,Barangay Treasurer,2 Minutes
+,How to get a Community Tax Certificate?,Step 4: Get your Community Tax Certificate,Barangay Treasurer,2 Minutes
+,,,,
+4,How to use the Barangay Facilities and Properties?,"Step 1: Go to the Barangay Office, ask the Desk Officer for the request slip",Barangay Treasurer,3 Minutes
+,How to use the Barangay Facilities and Properties?,Step 2: Pay the cost of Rental of Facilities and Propperties Required,Barangay Treasurer,5 Minutes
+,How to use the Barangay Facilities and Properties?,Social Hall: 500.00,Barangay Treasurer,5 Minutes
+,How to use the Barangay Facilities and Properties?,Covered Court: 500.00,Barangay Treasurer,5 Minutes
+,How to use the Barangay Facilities and Properties?,Plastic Chairs: 5.00/pc,Barangay Treasurer,5 Minutes
+,How to use the Barangay Facilities and Properties?,Tables: 10.00,Barangay Treasurer,5 Minutes
+,How to use the Barangay Facilities and Properties?,Sound System: 500/day,Barangay Treasurer,5 Minutes
+,How to use the Barangay Facilities and Properties?,Market Stall: 500.00/month,Barangay Treasurer,5 Minutes
+,How to use the Barangay Facilities and Properties?,Textile or Cloth: 50.00,Barangay Treasurer,5 Minutes
+,How to use the Barangay Facilities and Properties?,Costumes/Props 100/set/day,Barangay Treasurer,5 Minutes
+,How to use the Barangay Facilities and Properties?,"Collapsible Tent: 2,000.00",Barangay Treasurer,5 Minutes
+,,,,
+5,How to get the Certificate to File Action for Complainants?,Step 1: Go to the Barangay Hall or Lupon Office and fill up the Request Slip,Lupon Secretary,5 Minutes
+,How to get the Certificate to File Action for Complainants?,Step 2: Present proof that the person requesting CFA is the complainant,Lupon Secretary,10 Minutes
+,How to get the Certificate to File Action for Complainants?,Step 3: Get the Certification,Punong Barangay,20 Minutes
+,,,,
+6,How to get the Certificate to File Action for Respondents?,Step 1: Go to the Barangay Hall or Lupon Office and fill up the Request Slip,Lupon Secretary,5 Minutes
+,How to get the Certificate to File Action for Respondents?,Step 2: Present proof that the person requesting CFA is the respondent,Lupon Secretary,10 Minutes
+,How to get the Certificate to File Action for Respondents?,Step 3: Get the Certification,Punong Barangay & Lupon Secretary,20 Minutes
