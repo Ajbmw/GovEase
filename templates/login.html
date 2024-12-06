@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - GovEase</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><a href="{{ url_for('index') }}">GovEase</a></h1>
+            <nav class="menu">
+                <!-- Add any navigation links here if needed -->
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <div class="login-container">
+                <h2>Welcome to <span class="highlight">GovEase</span></h2>
+                <p>Please log in to access your account.</p>
+
+                <!-- Display any flash messages for feedback -->
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        <ul class="flash-messages">
+                            {% for category, message in messages %}
+                                <li class="flash {{ category }}">{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                {% endwith %}
+
+                <!-- Login Form -->
+                <form action="{{ url_for('login') }}" method="POST" class="login-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                    <button type="submit" class="btn-login">Log In</button>
+                </form>
+
+                <!-- Link to Sign Up page if the user doesn't have an account -->
+                <p class="signup-link">Don't have an account? <a href="{{ url_for('signup') }}">Sign Up here</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GovEase. All rights reserved. Poblacion, Carmen, Surigao del Sur, Philippines 8315</p>
+    </footer>
+</body>
+</html>

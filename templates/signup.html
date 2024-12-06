@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - GovEase</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><a href="{{ url_for('index') }}">GovEase</a></h1>
+            <nav class="menu">
+                <!-- Add navigation if needed -->
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="signup-section">
+            <h2>Create a <span class="highlight">GovEase Account</span></h2>
+
+            <!-- Display any flash messages for feedback -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <ul class="flash-messages">
+                        {% for category, message in messages %}
+                            <li class="flash {{ category }}">{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+
+            <!-- Sign Up Form -->
+            <form action="{{ url_for('signup') }}" method="POST" class="signup-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm_password" required>
+
+                <button type="submit" class="btn-login">Sign Up</button>
+            </form>
+
+            <p class="signup-link">Already have an account? <a href="{{ url_for('login') }}">Log In here</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GovEase. All rights reserved. Poblacion, Carmen, Surigao del Sur, Philippines 8315</p>
+    </footer>
+</body>
+</html>
