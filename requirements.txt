@@ -1,8 +1,3 @@
-Flask
-Werkzeug
-sqlite3
-itsdangerous
-click
-Jinja2
-MarkupSafe
+flask
+werkzeug
 rapidfuzz
