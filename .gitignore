@@ -1,5 +1,2 @@
 # Ignore virtual environment
 venv/
-.idea/
-*.pyc
-__pycache__/
