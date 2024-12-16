@@ -1,0 +1,148 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;  /* Space out elements (title and logout) */
+    align-items: center;  /* Align items vertically */
+    background: linear-gradient(to right, #0078ff, #005bb5);  /* Gradient background */
+    color: white;
+    padding: 20px 40px;  /* Increased padding for a cleaner look */
+    font-size: 24px;  /* Larger font size */
+    font-weight: 600;
+}
+
+/* Header Title */
+header h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    flex-grow: 1;  /* Allow title to take available space */
+}
+
+header h1 a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+header h1 a:hover {
+    color: #f8f9fa;  /* Change color on hover */
+}
+
+/* Header Container */
+.header-container {
+    display: flex;
+    justify-content: space-between;  /* Space out elements (title and logout) */
+    align-items: center;
+    width: 100%;
+}
+
+/* Navigation */
+nav .btn-logout {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;  /* Space between title and logout button */
+}
+
+nav .btn-logout:hover {
+    background-color: #d63e3e;
+}
+
+/* Container */
+.admin-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styling */
+.form-section,
+.table-section {
+    margin-bottom: 30px;
+}
+
+.section-divider {
+    border: 0;
+    height: 2px;
+    background-color: #0078ff;
+    margin: 20px 0;
+}
+
+/* Table Styles */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th, .admin-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.admin-table th {
+    background-color: #0078ff;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.admin-table tr:hover {
+    background-color: #d9edf7;
+}
+
+/* Form Styles */
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #0078ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005bb5;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f0f2f5;
+    color: #666;
+    font-size: 12px;
+    border-top: 1px solid #ddd;
+}
