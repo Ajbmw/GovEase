@@ -248,7 +248,7 @@ label {
 }
 
 input {
-    width: 400px;
+    width: 500px;
     padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -320,3 +320,4 @@ input:focus {
     background-color: #f44336;
     color: white;
 }
+
